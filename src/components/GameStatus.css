@@ -1,0 +1,83 @@
+.game-status {
+  padding: 25px;
+  border-radius: 4px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.game-status.won {
+  background: #f0f8f0;
+  border-color: #4CAF50;
+  box-shadow: 0 2px 6px rgba(76, 175, 80, 0.15);
+}
+
+.game-status.lost {
+  background: #fef0f0;
+  border-color: #F44336;
+  box-shadow: 0 2px 6px rgba(244, 67, 54, 0.15);
+}
+
+.status-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-emoji {
+  font-size: 3em;
+  color: #333;
+}
+
+.game-status.won .status-emoji {
+  color: #4CAF50;
+}
+
+.game-status.lost .status-emoji {
+  color: #F44336;
+}
+
+.game-status h2 {
+  font-size: 2em;
+  margin: 10px 0;
+  font-weight: 700;
+  color: #333;
+}
+
+.game-status.won h2 {
+  color: #4CAF50;
+}
+
+.game-status.lost h2 {
+  color: #F44336;
+}
+
+.game-status p {
+  font-size: 0.95em;
+  color: #666;
+  margin: 10px 0;
+}
+
+.word-answer {
+  font-size: 1.2em;
+  color: #333;
+  font-family: 'Monaco', 'Courier New', monospace;
+  background: #f0f0f0;
+  padding: 8px 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

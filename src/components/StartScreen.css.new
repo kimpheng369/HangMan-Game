@@ -1,0 +1,232 @@
+.start-screen-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.start-screen-wrapper {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  animation: fadeIn 0.3s ease-in;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.start-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.start-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.start-subtitle {
+  color: #666;
+  font-size: 1em;
+  letter-spacing: 0.3px;
+}
+
+.mode-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mode-button {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.2s ease;
+  color: #333;
+  text-align: left;
+}
+
+.mode-button:hover {
+  background: #eee;
+  border-color: #999;
+}
+
+.mode-icon {
+  font-size: 2em;
+  color: #333;
+  min-width: 50px;
+  text-align: center;
+}
+
+.mode-content {
+  flex: 1;
+}
+
+.mode-content h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.mode-content p {
+  font-size: 0.9em;
+  color: #999;
+}
+
+.difficulty-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.difficulty-selection h2 {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.difficulty-button {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  color: #333;
+}
+
+.difficulty-button:hover {
+  background: #eee;
+  border-color: #999;
+}
+
+.difficulty-icon {
+  font-size: 1.5em;
+  color: #333;
+  min-width: 40px;
+}
+
+.difficulty-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.difficulty-info {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.custom-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.custom-mode h2 {
+  color: #333;
+  font-size: 1.2em;
+}
+
+.custom-mode input {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-mode input::placeholder {
+  color: #999;
+}
+
+.custom-mode button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9em;
+}
+
+.custom-mode button:hover {
+  background: #555;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9em;
+  padding: 10px;
+  background: #fef5f5;
+  border-radius: 4px;
+  border: 1px solid #e74c3c;
+}
+
+.back-button {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.back-button:hover {
+  background: #eee;
+  border-color: #999;
+}
+
+@media (max-width: 768px) {
+  .start-screen-wrapper {
+    padding: 25px;
+  }
+
+  .start-title {
+    font-size: 2em;
+  }
+
+  .mode-button {
+    padding: 15px;
+  }
+}

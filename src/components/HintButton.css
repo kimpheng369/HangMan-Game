@@ -1,0 +1,31 @@
+.hint-button {
+  background: #333;
+  color: white;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+.hint-button:hover {
+  background: #555;
+  border-color: #555;
+}
+
+.hint-button:active {
+  opacity: 0.8;
+}
+
+.hint-button i {
+  font-size: 1em;
+}
+

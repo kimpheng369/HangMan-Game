@@ -1,0 +1,40 @@
+.word-display-container {
+  text-align: center;
+}
+
+.word-display {
+  font-size: 3.5em;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  color: #333;
+  font-family: 'Monaco', 'Courier New', monospace;
+  padding: 30px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.word-display.won {
+  background: #f0f8f0;
+  color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.word-hint {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #999;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .word-display {
+    font-size: 2.2em;
+    padding: 20px;
+  }
+}
